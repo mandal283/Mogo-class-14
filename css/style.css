@@ -26,10 +26,12 @@ a:hover {
   width: 100%;
   background: url(..//images/banner1.png) center top no-repeat;
   background-size: cover;
+  /* z-index: 0; */
+  /* position: relative; */
 }
 .banner-section .fhaka {
-  width: 1000%;
-  padding: 30px 0px;
+  width: 100%;
+  padding: 20px 0px;
 }
 .t {
   display: flex;
@@ -69,6 +71,16 @@ a:hover {
   outline: 0;
   box-shadow: none;
 }
+/* particals-start */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+/* particals-end */
 .social-icon ul li {
   display: inline-block;
   margin-left: 15px;
@@ -138,14 +150,21 @@ a:hover {
 
 /* top-herder-section-end */
 /* banner-text-inner-start */
+.baner-content .partical {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 .baner-content {
   width: 100%;
 }
 .banner-text-inner {
+  position: relative;
   width: 100%;
   text-align: center;
   padding: 100px 0px;
   color: white;
+  /* display: inline; */
 }
 .banner-text-inner h3 {
   font-size: 50px;
@@ -153,11 +172,37 @@ a:hover {
   font-family: "Kaushan Script", cursive;
 }
 .banner-text-inner h2 {
-  padding: 20px 300px;
+  display: inline;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 80px;
 }
+.banner-text-inner .margi {
+  margin-top: 25px;
+}
+/* animation-start */
+.baner-content h2 {
+  position: relative;
+  animation-name: nayan;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+@keyframes nayan {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  50% {
+    top: 0px;
+    left: 50px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
+/* animation-end */
 .comon {
   width: 100px;
   height: 2px;

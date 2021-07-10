@@ -1,10 +1,32 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .baner-content .banner-text-inner h2 {
-    font-size: 40px;
+    font-size: 35px;
     width: 100%;
     padding: 20px 0px;
   }
-
+  /* animation-start */
+  .baner-content h2 {
+    position: relative;
+    animation-name: nayan;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+  }
+  @keyframes nayan {
+    0% {
+      top: 0px;
+      left: 0px;
+    }
+    50% {
+      top: 0px;
+      left: 100px;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+    }
+  }
+  /* animation-end */
   .baner-content .banner-text-inner h3 {
     font-size: 20px;
   }
@@ -30,6 +52,9 @@
   .banner-section .banner-text-inner {
     padding: 45px 0px;
   }
+  /* .banner-section .banner-text-inner h1 {
+    font-size: 10px !important;
+  } */
   /* aboutk-section-start */
   .about-section {
     padding: 40px 0px !important;
