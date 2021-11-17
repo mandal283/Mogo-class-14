@@ -18,7 +18,7 @@
   <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@0ac23ca/css/all.css" rel="stylesheet"
     type="text/css" />
   <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" /> -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 
@@ -293,7 +293,7 @@
       </div>
 
     </div>
-  </section> -->
+  </section>
 
   <!-- uniq-seciton-start -->
   <section class="uniq-section">
@@ -322,7 +322,7 @@
       </div>
     </div>
   </section>
-  <!-- uniq-seciton-end -->
+  <!-- uniq-seciton-end  -->
   <!-- what-section-start -->
   <section class="what-do-section">
     <div class="container">
@@ -717,37 +717,24 @@
         </div>
         <div class="col-md-12 wow bounceInRight" data-wow-duration="2s">
           <!-- Swiper -->
-          <div class="swiper-container mySwiper">
+          <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="images/port1.png" />
+                <img src="images/port2.png" alt="">
               </div>
               <div class="swiper-slide">
-                <img src="images/port2.png" />
+                <img src="images/port3.png" alt="">
               </div>
               <div class="swiper-slide">
-                <img src="images/port3.png" />
+                <img src="images/port1.png" alt="">
               </div>
               <div class="swiper-slide">
-                <img src="images/port1.png" />
+                <img src="images/port2.png" alt="">
               </div>
-              <div class="swiper-slide">
-                <img src="images/port2.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="images/port3.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="images/port2.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="images/port1.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="images/port2.png" />
-              </div>
-            </div>
 
+
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -854,10 +841,12 @@
             <div class="col-md-6">
               <div class="first">
                 <img src="images/mogo.png" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                  labore
                   et
                   dolore magna
-                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                  ea
                   commodo
                   consequat.</p>
                 <h6> <span>15k</span> followers</h6>
@@ -996,9 +985,27 @@
   <script src="js/owl.carousel.min.js"></script>
   <!-- wow -animate -->
   <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      loop: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      // pagination: {
+      //   el: ".swiper-pagination",
+      // },
+    });
+  </script>
   <!-- isotope -->
   <script src="js/isotope.pkgd.min.js"></script>
 
